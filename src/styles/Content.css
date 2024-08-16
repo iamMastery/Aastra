@@ -1,0 +1,144 @@
+/* Content.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  width: 100%; /* Ensure the body and html span full width */
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Ensure content spans full width */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.section {
+  min-height: 100vh;/*Set each section to fill the viewport height*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Ensure section spans full width */
+  padding: 0; /* Remove any padding */
+  margin: 0; /* Remove any margin */
+}
+
+.home-content {
+  text-align: center; /* Center the text */
+  width: 100vw; /* Make sure it spans the full width */
+  /* height: 100vh;Ensure it takes the full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Required for the pseudo-element positioning */
+  background: white; /* Set background color as desired */
+  margin-top: 150px;
+}
+
+.home-text {
+  font-size: 3em; /* Increase the font size */
+  font-weight: 700; /* Make the text bold */
+  margin-bottom: 20px; /* Add some space below the text */
+}
+
+.home-text-first {
+  font-size: 3em; /* Increase the font size */
+  font-weight: 700; /* Make the text bold */
+  margin-bottom: 20px; /* Add some space below the text */
+}
+.home-text-last {
+  font-size: 3em; /* Increase the font size */
+  font-weight: 700; /* Make the text bold */
+  margin-bottom: 20px; /* Add some space below the text */
+}
+.pink-gradient {
+  background: linear-gradient(45deg, 
+    #FF9421 0%,  /* Start with orange */
+    #F8475E 34%, /* Transition to pink */
+    #F020B3 63%, /* Transition to magenta */
+    #8636F8 100%  /* End with purple */
+  );/* Pink gradient background */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Make the text take the gradient color */
+}
+
+.home-subtext {
+  font-size: 2em; /* Adjust the font size as needed */
+  font-weight: 500; /* Make the text bold */
+  margin-bottom: 10px; /* Add some space below the text */
+}
+
+.home-content p {
+  font-size: 1.5em;
+  font-weight: 400; /* Normal weight for the paragraph text */
+  color: #000; /* Ensure the text is readable */
+  margin-top: 20px; /* Add some space above the paragraph */
+}
+
+/* .circle{
+  width: 450px;
+  height: 450px;
+  background: linear-gradient(to bottom, #fa39ad 40%, #fe6c4c 50%);
+  filter:blur(100px);
+} */
+
+.circle {
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(to bottom, #fa39ad 50%, #45ade9 50%);
+  filter: blur(100px);
+  position: absolute; /* Make the circle position absolute */
+  top: 20%; /* Center vertically */
+  left: 0; /* Align to the left */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+}
+.hire-talents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Space between link and image */
+  margin-top: 20px; /* Add some space above the div */
+  margin-left: 130px; /* Move the entire container to the right */
+}
+
+.users-image {
+  width: 450px; /* Adjust the width as needed */
+  height: auto;
+}
+
+.hire-now-home {
+  background: black; /* Background color */
+  color: white; /* Text color */
+  padding: 10px 40px;
+  border-radius: 20px; /* Make it look like an oval button */
+  text-decoration: none;
+  font-weight: bold;
+  width: 120px; /* Adjust width to fit content */
+}
+
+.hire-now-home:hover {
+  opacity: 0.8; /* Slight opacity change on hover */
+  cursor: pointer; 
+}
+.circle-right{
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(to bottom, #fa39ad 50%, #45ade9 50%);
+  filter: blur(100px);
+  position: absolute; /* Make the circle position absolute */
+  bottom: 20%; /* Center vertically */
+  right: 0; /* Align to the left */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+}
+
+.language-image {
+  width: 700px; /* Adjust the width as needed */
+  height: auto;
+  margin-top: 50px;
+}
+
+

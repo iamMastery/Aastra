@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); /* Example for Google Fonts */
+/* Service.css */
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.service-title {
+  color: #FC834C;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; /* Light font weight */
+  text-transform: uppercase; /* Make the text uppercase */
+  padding: 10px 20px;
+  border: 2px solid #FFE1D3; /* Light border color */
+  border-radius: 50px; /* Oval border */
+  font-size: 12px; /* Adjust the font size as needed */
+  text-align: center;
+  letter-spacing: 2px; /* Add space between letters */
+}
+
+.service-heading{
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.orange-gradient {
+    background: linear-gradient(45deg, 
+      #FFB800 0%,  /* Start with orange */
+      #F8367C 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  .service p {
+    margin: 2px 0; 
+    font-size: 12px; 
+    line-height: 1.5; 
+    color: black; 
+    max-width: 800px; 
+    text-shadow: 1px 1px 2px rgb(73, 72, 72);
+  }
+
+  .service-gradient {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(to bottom, #fa39ad 50%, #45ade9 50%);
+    filter: blur(100px);
+    /* /* position: absolute;  */
+    top:260%; 
+    left: 0; 
+    transform: translateY(-50%); /*Adjust for vertical centering */
+    position:absolute;
+  }
+  .service-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Create two equal columns */
+    grid-template-rows: 1fr 1fr; /* Create two equal rows */
+    grid-gap: 20px;  /* Add some space between the boxes */
+    max-width: 900px; /* Adjust the width as needed */
+    /* margin: 80px auto; Center the container */
+    
+  }
+  
+  
+  
+  
+  
+  /* Add media queries for responsive design */
+  @media (max-width: 768px) {
+    .service-container {
+      grid-template-columns: 1fr; /* Change to a single column layout on smaller screens */
+    }
+  }
+  .top-left, .top-right, .bottom-left, .bottom-right {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    /* border: 2px solid #FC834C; Optional: Add border for visibility */
+    /* padding: 40px; */
+    font-size: 24px; /* Adjust font size as needed */
+    /* background: #FFE1D3; Light background color */
+    /* border-radius: 10px; Optional: Rounded corners */
+  }
+
+  .service-container div {
+    display: flex;
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+    padding: 20px;
+    margin: 10px;
+    /* border: 1px solid #FFE1D3;/* Optional: add border to each cell */
+    /* border-radius: 10px; Optional: round the corners */
+  }
+  
+  .service-container h2 {
+    /* margin: 10px; */
+    /* color: #FC834C; */
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 10px;
+    
+  }
+
+  /* .top-left {
+    position: relative; /* Make the container position relative */
+  /* } */
+
+  .hrImage {
+    width: 400px; /* Adjust the width as needed */
+    height: auto;
+    margin-top: 50px;
+  }
+  
+  .devImage {
+    width: 400px; /* Adjust the width as needed */
+    height: auto;
+    margin-top: 50px;
+  }

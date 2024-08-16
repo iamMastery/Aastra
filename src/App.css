@@ -1,0 +1,86 @@
+/* App.css */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+nav {
+  position: fixed; /* Fixed position so it stays at the top */
+  top: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 5px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  cursor: pointer; 
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; Ensure each section takes up full viewport height */
+  /* background-color: rgb(238, 220, 223);
+  margin: 30px;
+  border-radius: 30px;
+  padding: 20px; /* Add some padding for better readability */
+}
+
+.content-header {
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 20px; /* Add margin below headers */
+}

@@ -1,0 +1,117 @@
+nav {
+  position: fixed; /* Fixed position so it stays at the top */
+  top: 0;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  z-index: 1000; /* Ensure the navbar is on top of other elements */
+  border-bottom: 1px solid red; /* Add slight red border */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  cursor: pointer; 
+  margin: 0 15px; /* Increase space between menu items */
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+}
+
+.logo {
+  margin-right: auto; /* Pushes logo to the left */
+}
+
+.hire-now {
+  background: linear-gradient(45deg, 
+    #FF9421 0%,  /* Start with orange */
+    #F8475E 34%, /* Transition to pink */
+    #F020B3 63%, /* Transition to magenta */
+    #8636F8 100%  /* End with purple */
+  ); /* Pink gradient background */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px; /* Make it look like an oval button */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hire-now:hover {
+  opacity: 0.8; /* Slight opacity change on hover */
+}
+
+
+/* header.css */
+.header {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ff6ec4; /* Add a slight red border to the bottom of the header */
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.company-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 60px;
+}
+
+.menu li {
+  margin-left: 60px;
+}
+
+.menu li:first-child {
+  margin-left: 0;
+}
+
+.hire-now {
+  padding: 10px 20px;
+  background: linear-gradient(45deg, 
+    #FF9421 0%,  /* Start with orange */
+    #F8475E 34%, /* Transition to pink */
+    #F020B3 63%, /* Transition to magenta */
+    #8636F8 100%  /* End with purple */
+  ); /* Pink gradient background */
+  border-radius: 25px; /* Oval shape */
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: background 0.3s ease;
+}
+
+.hire-now:hover {
+  background: linear-gradient(45deg, 
+    #FF9421 0%,  /* Start with orange */
+    #F8475E 34%, /* Transition to pink */
+    #F020B3 63%, /* Transition to magenta */
+    #8636F8 100%  /* End with purple */
+  );/* Reverse gradient on hover */
+}
